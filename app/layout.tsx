@@ -1,9 +1,10 @@
+import { Toaster } from '@/components/ui/toaster'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
 export const metadata = {
-  title: 'Vercel Blob Starter',
-  description: 'A simple Next.js app with Vercel Blob for image uploads',
+  title: 'YouResepi',
+  description: 'Dapatkan Resepi Masakan Dari Video Youtube Masak-Masak Kegemaran Anda!',
 }
 
 const inter = Inter({
@@ -19,7 +20,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.variable}>{children}</body>
+      <body className={inter.variable}>{children}         <Toaster />
+	  </body>
     </html>
   )
 }
